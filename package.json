@@ -1,6 +1,6 @@
 {
   "name": "vite-uni-await-onlaunch",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "A vite plugin to solve the asynchronous problem between onlaunch and onload",
   "main": "dist/index.js",
   "scripts": {
