@@ -26,7 +26,7 @@ export default function (options: Options) {
         const triggerMethod = getTriggerMethod(code);
         code = codeArr
           .map((m) => {
-            if (m.includes(triggerMethod)) {
+            if (triggerMethod && m.includes(triggerMethod)) {
               m = replaceStr(m, triggerMethod);
             }
             return m;

@@ -1,4 +1,4 @@
-**English | [简体中文](https://github.com/zhoubapi999/vite-uni-await-onlaunch/blob/main/README.zh-CN.md)**
+**English | [简体中文](https://github.com/zhoubapi999/vite-uni-await-onlaunch/blob/master/README.zh-CN.md)**
 # vite-uni-await-onlaunch
 
 A vite plug-in to solve the asynchronous problem between onlaunch and onload in uniapp+vue3.2
