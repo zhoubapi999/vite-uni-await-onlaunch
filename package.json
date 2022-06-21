@@ -11,9 +11,14 @@
   },
   "keywords": [
     "vite",
+    "uniapp",
     "plugin"
   ],
-  "author": "Zhoubapi999",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhoubapi999/vite-uni-await-onlaunch"
+  },
+  "author": "zhoubapi999",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^17.0.35",

@@ -37,11 +37,11 @@ export default defineConfig({
 ```
 
 ##  0ptions
-|  params   | required  | type | default
-|  ----  | ----  |----  | ----  | 
-| fn  | yes | `() => Promise<any>` | 无
-| pagesRE  | no | `RegExp` | /src[\/\\]pages[\/\\]((?!.+(component(s)?|static).+).)*\.vue$/
-| triggerMethods  | no | `string[]` |`['onLoad', 'onShow']`
+|  params   | required  | type | default | explain
+|  ----  | ----  |----  | ----  | ----  | 
+| fn  | yes | `() => Promise<any>` |  | <div style="width: 300pt">methods to be executed first on the current page, such as login, etc
+| pagesRE  | no | `RegExp` | /src/pages | <div style="width: 300pt">page regularity to insert fn</div>
+| triggerMethods  | no | `string[]` |`['onLoad', 'onShow']`| <div style="width: 300pt">The inserted life cycle array has a decreasing priority. Only one is inserted. For example, if the page has onload and Onshow, it is only executed in advance in onload.fn</div>
 
 
 ## License

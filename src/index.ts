@@ -20,6 +20,7 @@ export default function (options: Options) {
     name: 'vite-plugin-uni-await-onlaunch',
     enforce: 'pre',
     transform(code, id) {
+      if (!fn) return;
       id = normalizePagePathFromBase(id);
       if (pagesRE.test(normalizePagePathFromBase(id))) {
         const codeArr = code.split('\n');

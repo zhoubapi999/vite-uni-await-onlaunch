@@ -35,11 +35,11 @@ export default defineConfig({
 ```
 
 ##  0ptions
-|  参数   | 必填  | 类型 | 默认值
-|  ----  | ----  |----  | ----  | 
-| fn  | yes | `() => Promise<any>` | 无
-| pagesRE  | no | `RegExp` | /src[\/\\]pages[\/\\]((?!.+(component(s)?|static).+).)*\.vue$/
-| triggerMethods  | no | `string[]` |`['onLoad', 'onShow']`
+|  参数   | 必填  | 类型 | 默认值 | 说明
+|  ----  | ----  |----  | ----  | ----  | 
+| fn  | yes | `() => Promise<any>` | 无 | <div style="width: 300pt">当前页面要先执行的方法，如登录等</div>
+| pagesRE  | no | `RegExp` | src下的pages目录 | <div style="width: 300pt">需要插入fn的页面正则，默认src下的pages目录</div>
+| triggerMethods  | no | `string[]` |`['onLoad', 'onShow']` | <div style="width: 300pt">插入的生命周期数组，优先级递减，只插入一个，如页面有onLoad和onShow，只在onLoad中提前执行fn</div>
 
 
 ## License
