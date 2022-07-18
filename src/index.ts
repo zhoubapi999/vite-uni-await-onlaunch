@@ -56,7 +56,11 @@ export default function (options: Options) {
     if (!str.includes('async')) {
       str = str.replace(`${triggerMethod}(`, `${triggerMethod}(async `);
     }
-    str = str.replace(`{`, `{\nconst ${name} = ${fn}\nawait ${name}()\n`);
+    // 没被注释
+    if (!str.includes('//')) {
+      str = str.replace(`{`, `{\nconst ${name} = ${fn}\nawait ${name}()\n`);
+    }
+
     return str;
   }
 
